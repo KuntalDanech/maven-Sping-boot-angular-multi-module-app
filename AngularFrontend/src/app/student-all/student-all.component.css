@@ -1,0 +1,7 @@
+.my-table{
+    width: 100%;
+    border: 1px solid black;
+}
+.my-table > tr,td{
+    border: 1px solid black;
+}

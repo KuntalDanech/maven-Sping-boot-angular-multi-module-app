@@ -1,0 +1,31 @@
+<h3>Students</h3>
+<table class="table">
+    <tr class="bg-info text-white">
+        <td>ID</td>
+        <td>Name</td>
+        <td>Course</td>
+        <td>Fees</td>
+        <td>GST</td>
+        <td>Discount</td>
+        <td>Operation</td>
+    </tr>
+    <tr *ngFor="let s of students">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.course}}</td>
+        <td>{{s.stdFees}}</td>
+        <td>{{s.gst}}</td>
+        <td>{{s.discount}}</td>
+        <td>
+            <button class="btn bg-danger" (click)='deleteStudent(s.id)'>Delete</button>
+            |
+            <button class="btn bg-success">Update</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="7">
+            {{message}}
+        </td>
+    </tr>
+</table>
+
